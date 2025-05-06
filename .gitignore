@@ -1,0 +1,46 @@
+# Compiled Clojure/Script files
+.cpcache/
+.clj-kondo/
+.shadow-cljs/
+target/
+out/
+.lsp
+
+# Build artifacts
+build.boot.lock
+shadow-cljs.edn.orig
+
+# Dependency directories
+node_modules/
+deps/
+
+# Editor/IDE specific files
+.idea/
+.emacs.d/
+.vscode/
+*.iml
+*.swp
+*.swo
+*.vrb
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Environment variables
+.env
+.env.*
+env.edn
+
+# Jar files (if you build an uberjar)
+*.jar
+
+# Generated files
+resources/public/js/
+resources/public/css/
+
+# Other project specific ignores
+# Add any other files or directories you want to ignore here
