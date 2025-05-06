@@ -5,6 +5,7 @@
 target/
 out/
 .lsp
+.nrepl-port
 
 # Build artifacts
 build.boot.lock
