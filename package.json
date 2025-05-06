@@ -4,7 +4,9 @@
   "description": "",
   "main": "entry.js",
   "scripts": {
-    "dev:cljs": "shadow-cljs watch app"
+    "dev:cljs": "shadow-cljs watch app",
+    "dev:css": "npx @tailwindcss/cli -i ./resources/public/css/input.css -o ./resources/public/css/output.css --watch",
+    "dev": "concurrently 'npm run dev:cljs' 'npm run dev:css'"
   },
   "keywords": [],
   "author": "atsyot",

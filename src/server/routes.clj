@@ -18,8 +18,8 @@
       [:meta {:http-equiv "x-ua-compatible" :content "ie=edge"}]
       [:meta {:name "description" :content ""}]
       [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
-      [:title "Affordable Online Art Therapy, Training, Somatic Education & Tools - Nattanan Sornpeng, art therapy & somatic education"]
-      [:link {:rel "stylesheet" :href "/styles/output.css"}]]
+      [:title ""]
+      [:link {:rel "stylesheet" :href "/css/output.css"}]]
      [:body
       [:div#root (raw-string inner)]
       [:script {:src "/js/entry.js"}]]])))
