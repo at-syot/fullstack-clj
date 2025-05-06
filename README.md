@@ -11,10 +11,10 @@
 
 1. SSR <input type="checkbox" checked/>
 2. HOT reload <input type="checkbox" checked/>
-3. Tailwindcss <input type="checkbox" />
-4. Routing <input type="checkbox" />
+3. Tailwindcss <input type="checkbox" checked/>
+4. Routing <input type="checkbox" checked/>
    1. Server <input type="checkbox" checked/>
-   2. Client <input type="checkbox" />
+   2. Client <input type="checkbox" checked/>
 
 ## Quick setup
 

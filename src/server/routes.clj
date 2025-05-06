@@ -24,18 +24,20 @@
       [:div#root (raw-string inner)]
       [:script {:src "/js/entry.js"}]]])))
 
-(defn render-app [_]
+(defn render-app [request]
   {:status 200
-   :headers {"Content-Type" "text/html"
-             ; "Cache-Control" "no-cache, no-store, must-revalidate"
-             ; "Expires" "0" ;; not sure that we need this ??
-             }
+   :headers {"Content-Type" "text/html"}
    :body 
-   (-> ($ app.ui/app)
+   (-> (case (:uri request)
+         "/" ($ app.ui/app)
+         "/about" ($ app.ui/about)
+         "/profile" ($ app.ui/profile)
+         ($ app.ui/app))
        dom.server/render-to-static-markup
        index)})
 
+;; Adjust as needed
 (defroutes app 
-  (GET "/" [] render-app))
+  (GET "/*" [] render-app))
 
 
