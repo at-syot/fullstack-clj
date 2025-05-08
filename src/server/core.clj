@@ -1,11 +1,13 @@
 (ns server.core
+  (:gen-class)
   (:require [ring.adapter.jetty :refer [run-jetty]]
             [ring.middleware.resource :refer [wrap-resource]]
             
             [server.routes]))
 
 (comment 
-  (restart!))
+  (restart!)
+  (stop-server!))
 
 (defonce server (atom nil))
 
@@ -40,6 +42,9 @@
           )
       {:port 3000 :join? false}))
   (println "Server started on port 3000"))
+
+(defn -main []
+  (start-server!))
 
 (defn stop-server! []
   (when @server 

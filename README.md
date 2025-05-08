@@ -15,6 +15,8 @@
 4. Routing <input type="checkbox" checked/>
    1. Server <input type="checkbox" checked/>
    2. Client <input type="checkbox" checked/>
+5. ENV [dev, production] <input type="checkbox"/>
+6. DB <input type="checkbox"/>
 
 ## Quick setup
 
