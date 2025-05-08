@@ -6,7 +6,8 @@
   "scripts": {
     "dev:cljs": "shadow-cljs watch app",
     "dev:css": "npx @tailwindcss/cli -i ./resources/public/css/input.css -o ./resources/public/css/output.css --watch",
-    "dev": "concurrently 'npm run dev:cljs' 'npm run dev:css'"
+    "dev": "concurrently 'npm run dev:cljs' 'npm run dev:css'",
+    "prod:build": "shadow-cljs release app && clj -T:build uber"
   },
   "keywords": [],
   "author": "atsyot",
